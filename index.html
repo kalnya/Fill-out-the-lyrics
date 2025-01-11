@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill out the Lyrics Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fill out the Lyrics Game</h1>
+  
+  <div class="container">
+    <!-- Dropdown to select search type -->
+    <label for="searchType">Search By:</label>
+    <select id="searchType">
+      <option value="artist">Artist Name</option>
+      <option value="song">Song Title</option>
+    </select>
+
+    <!-- Input for search query -->
+    <label for="searchQuery">Enter Name:</label>
+    <input type="text" id="searchQuery" placeholder="e.g., Taylor Swift or Blank Space" />
+
+    <!-- Input for artist name (optional for song search) -->
+    <div id="artistInput" class="hidden">
+      <label for="artistName">Enter Artist Name:</label>
+      <input type="text" id="artistName" placeholder="e.g., Taylor Swift" />
+    </div>
+
+    <!-- Select difficulty -->
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <!-- Search button -->
+    <button id="searchButton">Search</button>
+
+    <!-- Display results -->
+    <div id="randomSong"></div>
+    <div id="lyricsDisplay"></div>
+
+    <!-- Check Answers button -->
+    <button id="checkAnswers" class="hidden">Check Answers</button>
+
+    <!-- Play Again button -->
+    <button id="playAgainButton" class="hidden">Play Again</button>
+
+    <!-- Score display -->
+    <div id="score" class="text-center"></div>
+  </div>
+
+  <footer>
+    Made for someone special. 💖
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
